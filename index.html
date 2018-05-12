@@ -1,0 +1,55 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <style>
+  .contain{
+    padding: 16px;
+    width: 80%;
+    border: 1px solid #c2112f;
+  }
+  </style>
+  <link href="cisco.css" rel="stylesheet" type="text/css" />
+
+    <div class="contain" style="background-color:white; borde-color:red; position:fixed; top: 120px; right:150px;">
+    <div class="imgcontainer">
+      <img src="cisco-logo.png" alt="cisco" class="avatar">
+    </div>
+
+    <div class="container" >
+      <center>
+      <input type="text"placeholder="Enter Username" class="name" id="userName" required/>
+<br>
+      <input type="password" class="password" placeholder="Enter Password" id="userPass" required/>
+      <button class="login" onclick = "login()">Login</button>
+</center>
+    </div>
+
+    <div class="container" style="background-color:white">
+      <span class="pswd"><a href = "register.html"><font color = "#14485c"> Register </font></a> </span>
+</div>
+
+</div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <script>
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyAp5iYo1gNvVNFhrchp0ivU0rpGM6GA_pE",
+          authDomain: "fir-login-fc2fd.firebaseapp.com",
+          databaseURL: "https://fir-login-fc2fd.firebaseio.com",
+          projectId: "fir-login-fc2fd",
+          storageBucket: "fir-login-fc2fd.appspot.com",
+          messagingSenderId: "310357512497"
+      };
+      firebase.initializeApp(config);
+  </script>
+
+<script src = "index.js">
+
+</script>
+
+</body>
+</html>
